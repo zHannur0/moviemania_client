@@ -18,7 +18,7 @@ function SignUp() {
         console.log(values);
 
         try {
-            const url = "http://localhost:8080/api/signup";
+            const url = "https://moviemania-server.vercel.app/api/signup";
 
             const res = await axios.post(url, values);
             navigate("/movies");
